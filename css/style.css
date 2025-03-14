@@ -1,4 +1,4 @@
-/* Advanced Global Reset and Setup */
+/* Advanced Global Reset and Setup 
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@
   }
   
   /* Advanced Navigation Bar */
-  header {
+ /* header {
     background-color: #1f2937;
     box-shadow: 0 4px 6px rgba(0,0,0,0.4);
     position: sticky;
@@ -62,7 +62,7 @@
   }
   
   /* Advanced Hero Section */
-  .hero {
+  /*.hero {
     text-align: center;
     padding: 100px 0;
     animation: fadeInUp 1.2s ease-in-out;
@@ -102,7 +102,7 @@
   }
   
   /* Advanced Skills Grid & Cards */
-  .skills {
+  /*.skills {
     margin-top: 60px;
     background: #1f2937;
     padding: 40px;
@@ -149,13 +149,13 @@
   }
   
 /* Advanced clickable animation clearly for buttons */
-.cta-btn:active {
+/*.cta-btn:active {
     transform: scale(0.95);
     box-shadow: 0 5px 10px rgba(37, 99, 235, 0.6);
   }
   
   /* Advanced hover animation on nav clearly */
-  nav ul li a {
+  /*nav ul li a {
     position: relative;
   }
   
@@ -173,4 +173,153 @@
   nav ul li a:hover::after {
     width: 100%;
   }
-    
+    /* ✅ Global Styles - Reset & Font Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f3f4f6;
+  color: #111827;
+  text-align: center;
+}
+
+/* ✅ Navigation Bar - Stylish and Fixed */
+header {
+  background-color: #1f2937;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+nav ul li a:hover, nav ul li a.active {
+  background-color: #3b82f6;
+}
+
+/* ✅ Section Styling - Spaced & Centered */
+.container {
+  max-width: 1000px;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  color: #2563eb;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+/* ✅ About Page - Professional Layout */
+.about, .education, .experience, .projects, .contact {
+  background: white;
+  padding: 40px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about:hover, .education:hover, .experience:hover, .projects:hover, .contact:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  text-align: left;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* ✅ Project Cards */
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h2 {
+  color: #1f2937;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+/* ✅ Contact Page */
+.contact a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #9333ea;
+}
+
+/* ✅ Footer */
+footer {
+  text-align: center;
+  background-color: #1f2937;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
